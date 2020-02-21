@@ -55,6 +55,16 @@ nnoremap <Leader>m :action SelectIn<CR>
 " ideavim内置快捷键control+E
 nnoremap <Leader>e :action RecentFiles<CR>
 
+" ideavim内置快捷键Alt+Enter
+nnoremap <Leader>ae :action ShowIntentionActions<CR>
+
+" ideavim内置快捷键ShowProjectStructureSettings
+nnoremap <Leader>sps :action ShowProjectStructureSettings<CR>
+
+" ideavim内置快捷键MoveLineUp
+nnoremap <Leader>k :action MoveLineUp<CR>
+" ideavim内置快捷键MoveLineDown
+nnoremap <Leader>j :action MoveLineDown<CR>
 " shift+h--zz(向上翻页)
 nnoremap <Leader>h <S-h>zz
 
@@ -128,12 +138,13 @@ nnoremap gd :action GotoDeclaration<CR>
 nnoremap gf :action GotoFile<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gs :action GotoSymbol<CR>
+
 "创建新类
 nnoremap nc :action NewClass<CR>
 "创建新文件
 nnoremap nf :action NewFile<CR>
-"maven run build
-nnoremap <Leader>mr :action Maven.RunBuild<CR>
+
+
 
 " 设置debug为 zd
 nnoremap zd :action Debug<CR>
