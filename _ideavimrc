@@ -65,6 +65,11 @@ nnoremap <Leader>sps :action ShowProjectStructureSettings<CR>
 nnoremap <Leader>k :action MoveLineUp<CR>
 " ideavim内置快捷键MoveLineDown
 nnoremap <Leader>j :action MoveLineDown<CR>
+" ideavim内置快捷键RerunTests
+nnoremap <Leader>rt :action RerunTests<CR>
+" ideavim内置快捷键ReformatCode
+nnoremap <Leader>fc :action ReformatCode<CR>
+
 " shift+h--zz(向上翻页)
 nnoremap <Leader>h <S-h>zz
 
