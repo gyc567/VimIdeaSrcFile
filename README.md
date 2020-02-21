@@ -7,7 +7,7 @@
 3.在当前管理员用户目前下新建文件：_ideavimrc
 4.把当前工程中的文件：_ideavimrc所有内容复制到新建文件：_ideavimrc
 5.重启Intellij
-
+6.直接执行：swap_capslock_esc.reg文件，将CapsLock按键与Esc按键互换
 
 简单说明 ：
 
