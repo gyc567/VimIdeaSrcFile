@@ -69,6 +69,19 @@ nnoremap <Leader>j :action MoveLineDown<CR>
 nnoremap <Leader>rt :action RerunTests<CR>
 " ideavim内置快捷键ReformatCode
 nnoremap <Leader>fc :action ReformatCode<CR>
+" ideavim内置快捷键GotoImplementation跳到实现方法Ctrl+Alt+B
+nnoremap <Leader>im :action GotoImplementation<CR>
+
+" ideavim内置快捷键HideAllWindows最大化当前窗口
+nnoremap <Leader>lw :action HideAllWindows<CR>
+
+" ideavim内置快捷键SelectIn打开选中文件
+nnoremap <Leader>si :action SelectIn<CR>
+
+" ideavim内置快捷键RunClass直接运行当前类
+nnoremap <Leader>rr :action RunClass<CR>
+
+
 
 " shift+h--zz(向上翻页)
 nnoremap <Leader>h <S-h>zz
@@ -149,7 +162,8 @@ nnoremap nc :action NewClass<CR>
 "创建新文件
 nnoremap nf :action NewFile<CR>
 
-
+"创建新目录
+nnoremap nd :action NewDir<CR>
 
 " 设置debug为 zd
 nnoremap zd :action Debug<CR>
@@ -162,11 +176,38 @@ nnoremap <Leader>fp :action ShowFilePath<CR>
 "激活maven窗口
 "nnoremap <Leader>mv :action ActivateMavenProjectsToolWindow<CR>
 
+"以下为refactoring快捷键-开始
 "修改所有的关联名字
 nnoremap <Leader>re :action RenameElement<CR>
 
 "修改当前文件的文件名
 nnoremap <Leader>rf :action RenameFile<CR>
+
+
+"refactoring-引入变量IntroduceVariable
+nnoremap <Leader>dj :action IntroduceVariable<CR>
+
+"refactoring-抽取方法ExtractMehtod
+nnoremap <Leader>em :action ExtractMethod<CR>
+
+
+"refactoring-内联Inline
+nnoremap <Leader>dl :action Inline<CR>
+
+"refactoring-更新方法签名ChangeSignature
+nnoremap <Leader>cs :action ChangeSignature<CR>
+
+"refactoring-重构选项QuickListPopupAction
+nnoremap <Leader>rp :action Refactorings.QuickListPopupAction<CR>
+
+"refactoring-成员变量升级MembersPullUp
+nnoremap <Leader>mpu :action MembersPullUp<CR>
+
+
+"refactoring-成员变量降级MemberPullDown
+nnoremap <Leader>mpd :action MemberPushDown<CR>
+
+"refactoring快捷键-结束
 
 "显示用法
 nnoremap <Leader>su :action ShowUsages<CR>
