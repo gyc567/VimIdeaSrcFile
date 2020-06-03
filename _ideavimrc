@@ -24,6 +24,8 @@ nnoremap <Leader>fs :w<CR>
 nnoremap <Leader>q  :q<CR>
 nnoremap <Leader>Q  :qa!<CR>
 
+
+
 " Move half page faster
 " (上下翻页)
 nnoremap <Leader>d  <C-d>
@@ -77,9 +79,14 @@ nnoremap <Leader>lw :action HideAllWindows<CR>
 
 " ideavim内置快捷键SelectIn打开选中文件
 nnoremap <Leader>si :action SelectIn<CR>
+" ideavim内置快捷键JumpToLastChange打开选中文件
+nnoremap <Leader>lc :action JumpToLastChange<CR>
+
 
 " ideavim内置快捷键RunClass直接运行当前类
 nnoremap <Leader>rr :action RunClass<CR>
+" ideavim内置快捷键RunClass直接Debug当前类
+nnoremap <Leader>rd :action DebugClass<CR>
 
 
 
@@ -109,8 +116,8 @@ nnoremap <Leader>w\| <C-W>v
 
 " Tab operation
 " (切换标签)
-nnoremap tn gt
-nnoremap tp gT
+nnoremap tl gt
+nnoremap th gT
 
 " ==================================================
 " Show all the provided actions via `:actionlist`
@@ -121,6 +128,8 @@ nnoremap tp gT
 nnoremap <Leader>se :action SearchEverywhere<CR>
 
 "查找用法
+nnoremap fu :action FindUsages<CR>
+
 nnoremap <Leader>fu :action FindUsages<CR>
 
 "打断点
@@ -170,11 +179,17 @@ nnoremap zd :action Debug<CR>
 " 设置run 为 zr
 nnoremap zr :action Run<CR>
 
+
 "显示当前文件路径
 nnoremap <Leader>fp :action ShowFilePath<CR>
 
+"选择当前word
+nnoremap <Leader>w:action EditorSelectWord<CR>
+
 "激活maven窗口
 "nnoremap <Leader>mv :action ActivateMavenProjectsToolWindow<CR>
+
+
 
 "以下为refactoring快捷键-开始
 "修改所有的关联名字
